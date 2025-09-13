@@ -3,82 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
 
     <!-- Status Bar Area -->
-    <RelativeLayout
-        android:id="@+id/statusBar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@android:color/white"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp">
-
-        <!-- Time -->
-        <TextView
-            android:id="@+id/tvTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:text="9:30"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <!-- Status Icons -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
-
-            <!-- Signal Icon -->
-            <View
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="8dp"
-                android:background="#000000" />
-
-            <!-- WiFi Icon -->
-            <View
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="8dp"
-                android:background="#000000" />
-
-            <!-- Battery Icon -->
-            <View
-                android:layout_width="24dp"
-                android:layout_height="20dp"
-                android:background="#000000" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
 
     <!-- Header with Username and Icons -->
     <RelativeLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:layout_below="@id/statusBar"
+
         android:background="@android:color/white"
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp">
 
         <!-- Back Arrow -->
-        <TextView
+        <ImageView
             android:id="@+id/backArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:text="‹"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:src="@drawable/left"
+            app:tint="#9a585b"
+            />
 
         <!-- Username with Dropdown -->
         <LinearLayout
@@ -93,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="jacob_w"
-                android:textColor="#000000"
+                android:textColor="#9a585b"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -102,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="⌄"
-                android:textColor="#666666"
+                android:textColor="#9a585b"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -114,7 +63,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:text="+"
-            android:textColor="#000000"
+            android:textColor="#9a585b"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -143,7 +92,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="12dp"
-                android:src='@drawable/Search'
+                android:src='@drawable/search'
                 app:tint="#888888"
                 />
 
@@ -169,6 +118,7 @@
         android:background="@android:color/white">
 
         <LinearLayout
+            android:id="@+id/chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -241,10 +191,13 @@
                         android:textColor="#666666"
                         android:textSize="12sp" />
 
-                    <View
+                    <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:background="#CCCCCC" />
+                        android:layout_marginEnd="12dp"
+                        android:src='@drawable/camera'
+                        app:tint="#9a585b"
+                        />
 
                 </LinearLayout>
 
@@ -650,11 +603,12 @@
 
             <!-- Camera Icon -->
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:id="@+id/camera"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginEnd="12dp"
-                android:src='@drawable/camera'
-                app:tint="#888888"
+                android:src='@drawable/camera_filled'
+
                 />
 
             <TextView

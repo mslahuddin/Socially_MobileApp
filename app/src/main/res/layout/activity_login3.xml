@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/left"
+        android:contentDescription="Back"
+        android:clickable="true" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="#8B3D3D"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="60dp"
+        android:hint="asad_khasanov"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/usernameInput"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:text="Forgot password?"
+        android:textSize="14sp"
+        android:textColor="#8B3D3D"
+        android:clickable="true" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#A25B5B"
+        android:text="Log in"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <!-- OR Divider -->
+    <TextView
+        android:id="@+id/orDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="OR"
+        android:textSize="14sp"
+        android:textColor="#999999" />
+
+    <!-- Bottom Section -->
+
+
+        <!-- Sign Up Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/orDivider"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#8B3D3D"
+                android:clickable="true" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp">
+
+        <!-- App Name at Bottom -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Socially"
+            android:textSize="16sp"
+            android:textColor="#8B3D3D"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Home indicator -->
+        <View
+            android:layout_width="134dp"
+            android:layout_height="4.5dp"
+            android:background="#9a585b"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

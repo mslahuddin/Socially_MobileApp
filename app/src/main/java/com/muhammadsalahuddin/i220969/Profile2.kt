@@ -3,21 +3,29 @@ package com.muhammadsalahuddin.i220969
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
-class notification2 : AppCompatActivity() {
+import androidx.cardview.widget.CardView
+class Profile2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_notification2)
-        val following = findViewById<TextView>(R.id.following)
+        setContentView(R.layout.activity_profile2)
+        val highlights = findViewById<CardView>(R.id.highlights)
 
+        val editProfile = findViewById<CardView>(R.id.editProfile)
 
+        highlights.setOnClickListener {
+            val intent = Intent(this, story::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
+        editProfile.setOnClickListener {
+            val intent = Intent(this, EditProfile::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
 
         val search = findViewById<ImageView>(R.id.search)
 
@@ -28,7 +36,6 @@ class notification2 : AppCompatActivity() {
         val create = findViewById<ImageView>(R.id.create)
 
         val nav_home = findViewById<ImageView>(R.id.nav_home)
-
 
 
 
@@ -47,20 +54,14 @@ class notification2 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        create.setOnClickListener {
-            val intent = Intent(this,   create_post::class.java) // replace with your actual sign-up activity
-            startActivity(intent)
-        }
-
 
         nav_home.setOnClickListener {
             val intent = Intent(this,   Home::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
 
-
-        following.setOnClickListener {
-            val intent = Intent(this, notification::class.java)
+        create.setOnClickListener {
+            val intent = Intent(this,   create_post::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
     }

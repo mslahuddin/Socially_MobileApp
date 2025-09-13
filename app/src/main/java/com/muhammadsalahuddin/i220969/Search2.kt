@@ -1,6 +1,9 @@
 package com.muhammadsalahuddin.i220969
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,22 @@ class Search2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_search2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val chat = findViewById<LinearLayout>(R.id.chat)
+
+        val camera = findViewById<ImageView>(R.id.camera)
+
+
+
+        chat.setOnClickListener {
+            val intent = Intent(this, call::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
         }
+
+        camera.setOnClickListener {
+            val intent = Intent(this, camera::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
     }
 }

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B5726A">
+    android:background="#995a5a"
+    android:fitsSystemWindows="true">
 
     <!-- Main Content Container -->
     <RelativeLayout
@@ -115,28 +116,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <!-- Mute Icon - represented as lines -->
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="3dp"
-                        android:layout_centerInParent="true"
-                        android:background="@android:color/white" />
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="Phone icon"
+                        android:src="@drawable/msg" />
 
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="3dp"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="6dp"
-                        android:background="@android:color/white" />
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="3dp"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="-6dp"
-                        android:background="@android:color/white" />
-
-                </RelativeLayout>
+                   </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -153,22 +141,17 @@
                     android:layout_height="match_parent">
 
                     <!-- Phone Icon -->
-                    <View
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_centerInParent="true"
-                        android:background="@android:color/white" />
-
-                    <!-- Phone handle representation -->
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="8dp"
-                        android:layout_centerInParent="true"
-                        android:background="#FF0000" />
+                        android:src="@drawable/call"
+                        android:contentDescription="Phone icon"/>
 
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- Speaker Button -->
             <androidx.cardview.widget.CardView

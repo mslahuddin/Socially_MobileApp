@@ -44,16 +44,19 @@
             android:text="SMD"
             android:textColor="#800000"
             android:textStyle="bold"
+            android:layout_marginBottom="20dp"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/homeIndicator"
-            android:layout_width="100dp"
-            android:layout_height="8dp"
-            android:src="@drawable/home_indicator"
-            android:contentDescription="Home Indicator"
-            android:adjustViewBounds="true"
-            />
+        <View
+            android:layout_width="134dp"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="#9a585b"
+
+           />
+
 
     </LinearLayout>
 

@@ -3,64 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
 
     <!-- Status Bar Area -->
-    <RelativeLayout
-        android:id="@+id/statusBar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@android:color/white"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="12dp">
-
-        <!-- Time -->
-        <TextView
-            android:id="@+id/tvTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:text="9:30"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <!-- Status Icons -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="8dp"
-                android:background="#000000" />
-
-            <View
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="8dp"
-                android:background="#000000" />
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="20dp"
-                android:background="#000000" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
 
     <!-- Tab Layout -->
     <LinearLayout
+        android:layout_marginTop="15dp"
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@id/statusBar"
         android:background="@android:color/white"
         android:gravity="center"
         android:orientation="horizontal">
@@ -101,9 +54,9 @@
             android:orientation="vertical"
             android:layout_margin="10dp">
             <TextView
+                android:id="@+id/you"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-
                 android:text="You"
                 android:textColor="#9a585b"
                 android:textSize="16sp"
@@ -605,14 +558,15 @@
             android:elevation="4dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:paddingHorizontal="8dp"
-            android:weightSum="5">
+
+            android:layout_marginBottom="20dp"
+            android:weightSum="4">
 
             <!-- Home -->
             <ImageView
                 android:id="@+id/nav_home"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="Home"
                 android:padding="6dp"
@@ -628,47 +582,46 @@
                 android:contentDescription="Search"
                 android:padding="6dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/Search" />
+                android:src="@drawable/search" />
 
             <!-- Add -->
             <ImageView
-                android:id="@+id/nav_add"
+                android:id="@+id/create"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="Add"
                 android:padding="6dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/Create"
+                android:src="@drawable/create"
                 app:tint="#9a585b"/>
 
             <!-- Favorite -->
             <ImageView
-                android:id="@+id/nav_favorite"
+                android:id="@+id/like"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="Favorite"
                 android:padding="6dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/Like" />
+                android:src="@drawable/like" />
 
             <!-- Profile -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/card1Profile"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:elevation="2dp"
-                android:padding="8dp"
-                app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="100dp">
+                android:layout_marginRight="20dp"
+                android:id="@+id/profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="2dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/avatar" />
+
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
@@ -680,7 +633,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="8dp"
-            android:background="#CCCCCC" />
+            android:background="#9a585b" />
 
     </RelativeLayout>
 

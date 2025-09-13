@@ -5,6 +5,7 @@
     android:background="@drawable/bg"
     android:padding="16dp"
     android:fitsSystemWindows="true"
+
     >
 
     <!-- Scrollable Content -->
@@ -33,7 +34,7 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:padding="18dp"
-            android:src="@drawable/left" />
+            android:src="@drawable/left_arrow" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -211,11 +212,14 @@
             android:layout_alignParentBottom="true"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="8dp"
-                android:src="@drawable/home_indicator"
-                android:adjustViewBounds="true" />
+            <View
+                android:layout_width="134dp"
+                android:layout_height="4.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFF"
+               />
         </LinearLayout>
 
 

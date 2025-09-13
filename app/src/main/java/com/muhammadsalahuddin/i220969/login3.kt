@@ -10,14 +10,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Login2 : AppCompatActivity() {
+class login3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login2)
+        setContentView(R.layout.activity_login3)
         val login = findViewById<Button>(R.id.login)
 
-        val signup = findViewById<TextView>(R.id.signup)
+        val signup = findViewById<TextView>(R.id.signUp)
 
         signup.setOnClickListener {
             Toast.makeText(this, "Redirecting to Sign Up...", Toast.LENGTH_SHORT).show()
@@ -27,8 +27,8 @@ class Login2 : AppCompatActivity() {
 
         login.setOnClickListener {
             Toast.makeText(this, "Account Created Successfully!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, login3::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
     }
-    }
+}

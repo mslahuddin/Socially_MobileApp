@@ -94,12 +94,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Highlight"
+                    android:text="M.Salah10"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -107,23 +107,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="December 3, 2023"
-                    android:textColor="#CCFFFFFF"
+                    android:text="13h"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="10dp"
                     android:textSize="12sp" />
+
+
 
             </LinearLayout>
 
         </LinearLayout>
 
         <!-- Close Button -->
-        <ImageView
-            android:id="@+id/closeButton"
+        <TextView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:text="✕"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
-            app:tint="#FFFFFF" />
+
 
     </RelativeLayout>
 
@@ -195,7 +200,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/createv"
-               />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -243,7 +248,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/browse"
-               />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -267,7 +272,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/send"
-               />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -291,7 +296,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/more"
-               />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
