@@ -1,5 +1,6 @@
 package com.muhammadsalahuddin.i220969
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Home : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,6 +36,16 @@ class Home : AppCompatActivity() {
         val story = findViewById<CardView>(R.id.story)
 
         val share = findViewById<ImageView>(R.id.share)
+
+        val camera = findViewById<ImageView>(R.id.camera)
+
+        val myStory = findViewById<CardView>(R.id.myStory)
+
+
+
+        val cardProfile = findViewById<CardView>(R.id.cardProfile)
+
+
 
 
 
@@ -68,6 +80,21 @@ class Home : AppCompatActivity() {
 
         share.setOnClickListener {
             val intent = Intent(this,   Search2::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
+        camera.setOnClickListener {
+            val intent = Intent(this,   Camera_real::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
+        myStory.setOnClickListener {
+            val intent = Intent(this,   mystory::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
+        cardProfile.setOnClickListener {
+            val intent = Intent(this,   Profile::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
     }

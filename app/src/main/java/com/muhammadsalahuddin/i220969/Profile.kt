@@ -33,6 +33,10 @@ class Profile : AppCompatActivity() {
 
         val create = findViewById<ImageView>(R.id.create)
 
+        val msg = findViewById<CardView>(R.id.msg)
+
+        val nav_home = findViewById<ImageView>(R.id.nav_home)
+
 
 
         search.setOnClickListener {
@@ -52,6 +56,15 @@ class Profile : AppCompatActivity() {
 
         create.setOnClickListener {
             val intent = Intent(this,   create_post::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+
+        nav_home.setOnClickListener {
+            val intent = Intent(this,   Home::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
+        msg.setOnClickListener {
+            val intent = Intent(this,   Chat_screen::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
 

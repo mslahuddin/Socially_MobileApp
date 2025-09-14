@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:fitsSystemWindows="true">
 
-    <!-- Back Button -->
+
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="24dp"

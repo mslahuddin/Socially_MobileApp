@@ -41,7 +41,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="kyan.coleman"
+                        android:text="salah.10"
                         android:textColor="#9a585b"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -182,7 +182,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kyan Coleman"
+                    android:text="salah uddin"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -190,7 +190,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="kyan.coleman"
+                    android:text="salah.10"
                     android:textColor="#8E8E93"
                     android:textSize="14sp" />
 
@@ -214,7 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="🔗 kyan.co"
+                    android:text="🔗 salah.co"
                     android:textColor="#00376B"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -352,6 +352,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/post"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         app:cardBackgroundColor="#F5F5F5"

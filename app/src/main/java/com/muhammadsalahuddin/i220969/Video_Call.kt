@@ -3,33 +3,24 @@ package com.muhammadsalahuddin.i220969
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class story_post : AppCompatActivity() {
+class Video_Call : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_story_post)
-        val next = findViewById<CardView>(R.id.next)
+        setContentView(R.layout.activity_video_call)
 
-        val cross = findViewById<CardView>(R.id.cross)
+        val msg = findViewById<CardView>(R.id.msg)
 
-
-
-
-        next.setOnClickListener {
-            val intent = Intent(this, mystory::class.java) // replace with your actual sign-up activity
+        msg.setOnClickListener {
+            val intent = Intent(this, Chat_screen::class.java) // replace with your actual sign-up activity
             startActivity(intent)
-        }
-
-        cross.setOnClickListener {
-            finish()
         }
 
     }

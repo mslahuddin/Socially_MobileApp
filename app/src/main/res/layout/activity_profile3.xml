@@ -35,7 +35,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="salah.10"
+                        android:text="salah.uddin"
                         android:textColor="#262626"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -163,7 +163,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-
+            <!-- Profile Bio Section -->
             <LinearLayout
                 android:id="@+id/bio_section"
                 android:layout_width="match_parent"
@@ -176,7 +176,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Salah 10"
+                    android:text="salah uddin"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -294,9 +294,10 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="32dp"
+                    android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#9a585b"
+                    app:cardBackgroundColor="#EFEFEF"
                     app:cardCornerRadius="6dp"
                     app:cardElevation="0dp">
 
@@ -304,8 +305,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Follow"
-                        android:textColor="#FFFFFF"
+                        android:text="Following"
+                        android:textColor="#262626"
                         android:textSize="14sp"
                         android:textStyle="bold" />
                 </androidx.cardview.widget.CardView>

@@ -92,7 +92,6 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-
         <LinearLayout
             android:id="@+id/callControls"
             android:layout_width="wrap_content"
@@ -105,6 +104,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/msg"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="40dp"
@@ -124,7 +124,7 @@
                         android:contentDescription="Phone icon"
                         android:src="@drawable/msg" />
 
-                   </RelativeLayout>
+                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -197,14 +197,14 @@
 
     </RelativeLayout>
 
-
+    <!-- Status Bar Overlay (invisible but maintains space) -->
     <View
         android:layout_width="match_parent"
         android:layout_height="24dp"
         android:layout_alignParentTop="true"
         android:background="@android:color/transparent" />
 
-
+    <!-- Bottom Navigation Bar Space -->
     <View
         android:layout_width="match_parent"
         android:layout_height="48dp"

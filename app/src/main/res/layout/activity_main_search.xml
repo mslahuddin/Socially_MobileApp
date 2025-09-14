@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true">
 
 
-    <!-- Search Bar -->
+
     <RelativeLayout
         android:id="@+id/searchSection"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
     </RelativeLayout>
 
 
-    <!-- Category Tabs -->
+
     <LinearLayout
         android:id="@+id/categoryTabs"
         android:layout_width="match_parent"

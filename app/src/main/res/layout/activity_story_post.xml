@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/community1" />
+            android:src="@drawable/me" />
 
         <!-- Top Control Bar -->
         <LinearLayout
@@ -33,8 +33,9 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp">
 
-            <!-- Close Button -->
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/cross"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:cardBackgroundColor="#40000000"
@@ -276,6 +277,7 @@
 
             <!-- Send To Button -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/next"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="8dp"

@@ -9,7 +9,7 @@
 
 
 
-    <!-- Tab Layout -->
+
     <LinearLayout
         android:layout_marginTop="15dp"
         android:id="@+id/tabLayout"
@@ -89,7 +89,7 @@
             android:orientation="vertical"
             android:paddingHorizontal="16dp">
 
-            <!-- Follow Requests Section -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
 
             </LinearLayout>
 
-            <!-- New Section -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -119,13 +119,13 @@
                 android:textStyle="bold"
                 android:paddingVertical="12dp" />
 
-            <!-- Activity Item 1 - karennne liked your photo -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingVertical="12dp">
 
-                <!-- Profile Picture -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardProfile1"
                     android:layout_width="44dp"
@@ -141,7 +141,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- Activity Content -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -153,13 +153,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="karennne liked your photo. 1h"
+                        android:text="salman liked your photo. 1h"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
                 </LinearLayout>
 
-                <!-- Post Thumbnail -->
+
                 <ImageView
                     android:layout_width="44dp"
                     android:layout_height="44dp"
@@ -213,7 +213,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="kiero_d, zackjohn and 26 others liked your photo. 3h"
+                        android:text="abyero_d, johncena and 29 others liked your photo. 3h"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
@@ -272,7 +272,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="craig_love mentioned you in a comment: @jacob_w exactly.. 2d"
+                        android:text="olyive_10 mentioned you in a comment: @jacob_w exactly.. 2d"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
@@ -339,7 +339,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="martini_rond started following you. 3d"
+                        android:text="shar_10nh started following you. 3d"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
@@ -393,13 +393,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="maxjacobson started following you. 3d"
+                        android:text="lisah started following you. 3d"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
                 </LinearLayout>
 
-                <!-- Message Button -->
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

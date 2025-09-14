@@ -118,8 +118,9 @@
 
         </LinearLayout>
 
-        <!-- Close Button -->
+
         <TextView
+            android:id="@+id/close"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentEnd="true"
@@ -132,7 +133,7 @@
 
     </RelativeLayout>
 
-    <!-- Story Content Area (for text, stickers, etc.) -->
+
     <RelativeLayout
         android:id="@+id/storyContentArea"
         android:layout_width="match_parent"
@@ -141,7 +142,7 @@
         android:layout_above="@id/storyActions"
         android:paddingHorizontal="16dp">
 
-        <!-- Artist and Song Title (positioned at bottom left of content area) -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -152,7 +153,6 @@
 
     </RelativeLayout>
 
-    <!-- Story Actions Bottom Bar -->
     <LinearLayout
         android:id="@+id/storyActions"
         android:layout_width="match_parent"
@@ -164,7 +164,7 @@
         android:paddingHorizontal="24dp"
         android:paddingVertical="16dp">
 
-        <!-- Activity -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
 
         </LinearLayout>
 
-        <!-- Create -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
 
         </LinearLayout>
 
-        <!-- Create Post -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
 
         </LinearLayout>
 
-        <!-- Browse -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
 
         </LinearLayout>
 
-        <!-- Send -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -284,7 +284,7 @@
 
         </LinearLayout>
 
-        <!-- More -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -310,7 +310,7 @@
 
     </LinearLayout>
 
-    <!-- Invisible tap areas for story navigation -->
+
     <View
         android:id="@+id/tapAreaLeft"
         android:layout_width="0dp"

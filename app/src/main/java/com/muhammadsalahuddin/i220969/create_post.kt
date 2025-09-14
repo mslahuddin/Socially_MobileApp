@@ -22,7 +22,7 @@ class create_post : AppCompatActivity() {
 
 
         camera.setOnClickListener {
-            val intent = Intent(this, camera::class.java) // replace with your actual sign-up activity
+            val intent = Intent(this, Camera_real::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
 

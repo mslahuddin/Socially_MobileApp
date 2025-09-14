@@ -1,33 +1,21 @@
 package com.muhammadsalahuddin.i220969
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.cardview.widget.CardView
-class Profile2 : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+
+class Profile3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_profile2)
-        val highlights = findViewById<CardView>(R.id.highlights)
+        setContentView(R.layout.activity_profile3)
 
-        val editProfile = findViewById<CardView>(R.id.editProfile)
-
-        highlights.setOnClickListener {
-            val intent = Intent(this, story::class.java) // replace with your actual sign-up activity
-            startActivity(intent)
-        }
-
-        editProfile.setOnClickListener {
-            val intent = Intent(this, EditProfile::class.java) // replace with your actual sign-up activity
-            startActivity(intent)
-        }
+        val msg = findViewById<CardView>(R.id.msg)
 
         val search = findViewById<ImageView>(R.id.search)
 
@@ -39,11 +27,11 @@ class Profile2 : AppCompatActivity() {
 
         val nav_home = findViewById<ImageView>(R.id.nav_home)
 
-        val post = findViewById<CardView>(R.id.post)
 
-
-
-
+        msg.setOnClickListener {
+            val intent = Intent(this,   Chat_screen::class.java) // replace with your actual sign-up activity
+            startActivity(intent)
+        }
 
 
         search.setOnClickListener {
@@ -71,12 +59,5 @@ class Profile2 : AppCompatActivity() {
             val intent = Intent(this,   create_post::class.java) // replace with your actual sign-up activity
             startActivity(intent)
         }
-
-        post.setOnClickListener {
-            val intent = Intent(this,   Camera_real::class.java) // replace with your actual sign-up activity
-            startActivity(intent)
-        }
-
-
     }
 }

@@ -6,7 +6,7 @@
     android:background="#000000"
     android:fitsSystemWindows="true">
 
-    <!-- Story Background Image -->
+
     <ImageView
         android:id="@+id/storyImage"
         android:layout_width="match_parent"
@@ -14,15 +14,13 @@
         android:scaleType="centerCrop"
         android:src="@drawable/community3" />
 
-    <!-- Dark overlay for better text visibility -->
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
 
-    <!-- Status Bar Area -->
 
-    <!-- Story Progress Bar -->
     <LinearLayout
         android:id="@+id/storyProgressBar"
         android:layout_width="match_parent"
@@ -32,7 +30,7 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
-        <!-- Progress segments (showing multiple stories) -->
+
         <View
             android:layout_width="0dp"
             android:layout_height="2dp"
@@ -56,7 +54,7 @@
 
     </LinearLayout>
 
-    <!-- Story Header -->
+
     <RelativeLayout
         android:id="@+id/storyHeader"
         android:layout_width="match_parent"
@@ -65,7 +63,7 @@
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp">
 
-        <!-- Profile Info -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +72,7 @@
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <!-- Profile Picture -->
+
             <androidx.cardview.widget.CardView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -89,7 +87,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Story Info -->
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,7 +113,7 @@
 
         </LinearLayout>
 
-        <!-- Close Button -->
+
         <ImageView
             android:id="@+id/closeButton"
             android:layout_width="24dp"
@@ -127,7 +125,7 @@
 
     </RelativeLayout>
 
-    <!-- Story Content Area (for text, stickers, etc.) -->
+
     <RelativeLayout
         android:id="@+id/storyContentArea"
         android:layout_width="match_parent"
@@ -136,7 +134,7 @@
         android:layout_above="@id/storyActions"
         android:paddingHorizontal="16dp">
 
-        <!-- Artist and Song Title (positioned at bottom left of content area) -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,7 +145,7 @@
 
     </RelativeLayout>
 
-    <!-- Story Actions Bottom Bar -->
+
     <LinearLayout
         android:id="@+id/storyActions"
         android:layout_width="match_parent"
@@ -159,7 +157,7 @@
         android:paddingHorizontal="24dp"
         android:paddingVertical="16dp">
 
-        <!-- Activity -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -183,7 +181,7 @@
 
         </LinearLayout>
 
-        <!-- Create -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -207,7 +205,7 @@
 
         </LinearLayout>
 
-        <!-- Create Post -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -231,7 +229,7 @@
 
         </LinearLayout>
 
-        <!-- Browse -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -255,7 +253,7 @@
 
         </LinearLayout>
 
-        <!-- Send -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -279,7 +277,7 @@
 
         </LinearLayout>
 
-        <!-- More -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -305,7 +303,7 @@
 
     </LinearLayout>
 
-    <!-- Invisible tap areas for story navigation -->
+
     <View
         android:id="@+id/tapAreaLeft"
         android:layout_width="0dp"

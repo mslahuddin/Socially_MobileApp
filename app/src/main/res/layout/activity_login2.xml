@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:fitsSystemWindows="true">
 
-    <!-- Title -->
+
     <TextView
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
-    <!-- Profile Image -->
+
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="120dp"
@@ -32,19 +32,19 @@
         android:clipToOutline="true"
         android:contentDescription="Profile Image" />
 
-    <!-- Username -->
+
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/profileImage"
         android:layout_marginTop="12dp"
-        android:text="jacob_w"
+        android:text="m_sala"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:layout_centerHorizontal="true" />
 
-    <!-- Login Button -->
+
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
-    <!-- Switch Accounts -->
+
     <TextView
         android:id="@+id/switchAccounts"
         android:layout_width="wrap_content"
@@ -69,9 +69,7 @@
         android:textColor="#8B3D3D"
         android:layout_centerHorizontal="true" />
 
-    <!-- Bottom text -->
 
-    <!-- Bottom Section -->
     <LinearLayout
         android:id="@+id/bottomSection"
         android:layout_width="match_parent"
@@ -81,7 +79,6 @@
         android:gravity="center_horizontal"
         android:paddingBottom="12dp">
 
-        <!-- Divider line -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -112,7 +109,7 @@
                 android:textColor="#8B3D3D" />
         </LinearLayout>
 
-        <!-- Home indicator -->
+
         <View
             android:layout_width="134dp"
             android:layout_height="4.5dp"
